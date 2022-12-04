@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Javascript 3</title>
+</head>
+
+<body>
+    <h2>Biaya Prakir</h2>
+    <form>
+        Jam Masuk : <input type="number" id="masuk">
+        <br> <br>
+        Jam Keluar : <input type="number" id="keluar">
+        <br> <br>
+        <input type="button" id="hitung" value="hitung" onclick="biaya_parkir();">
+        Hasil : <input type="text" id="hasil">
+    </form>
+
+    <!---Kode Javascript-->
+    <script>
+        function biaya_parkir() {
+            let jam_masuk = document.getElementById("masuk").value;
+            let jam_keluar = document.getElementById("keluar").value;
+            // total waktu parkir
+            let total_waktu = jam_keluar - jam_masuk
+
+            // tarif awal
+            let tarif_awal = 3000;
+
+            // selisih waktu jika lebih dari 2 jam
+            let selisih = Math.round(total_waktu - 2);
+
+            // tarif lanjutan 
+            let tarif_lanjutan = selisih * 1000;
+
+            // tarif total
+            let tarif_total = tarif_awal + tarif_lanjutan;
+
+            // hasil
+            document.getElementById("hasil").value = "Rp." + tarif_total;
+        }
+    </script>
+
+</body>
+
+</html>

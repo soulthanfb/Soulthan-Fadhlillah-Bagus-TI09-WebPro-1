@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JavaScript 4</title>
+</head>
+
+<body>
+    <form>
+        <input type="number" id="bil1" onchange="hitung_penjumlahan()">
+        <br>
+        <span>+</span>
+        <br>
+        <input type="number" id="bil2" onchange="hitung_penjumlahan()">
+        <br>
+        <span>=</span>
+        <br>
+        <input type="number" id="hasil">
+    </form>
+
+    <script>
+        function hitung_penjumlahan() {
+            let bil1 = document.getElementById("bil1").value;
+            let bil2 = document.getElementById("bil2").value;
+            let hasil = parseInt(bil1) + parseInt(bil2);
+            document.getElementById("hasil").value = hasil;
+        }
+    </script>
+</body>
+
+</html>

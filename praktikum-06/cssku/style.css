@@ -1,0 +1,47 @@
+/* buat header */
+
+body {
+    background-color: #ffc947;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#header {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#header h1 {
+    color: gold;
+}
+
+#header blockquote {
+    background-color: orange;
+}
+
+/*buat menu*/
+
+.menu ul {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+}
+
+.gambar {
+    text-align: center;
+}
+
+.bigger {
+    font-size: 20px;
+}
+
+.fp::first-letter {
+    font-size: 50px;
+    color: green;
+}
+
+.koleksi img {
+    width: 20%;
+}

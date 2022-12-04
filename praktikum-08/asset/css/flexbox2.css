@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column; /* Mengubah main axis menjadi dari atas ke bawah */
+    margin: 0;
+}
+
+#main {
+    display: flex;
+    flex: 1; /* Menempati sisa ruang pada flex container body */
+}
+
+#main > article {
+    flex: 1; /* Menempati sisa ruang pada flex container #main */
+    order: 1; /* Mengatur urutan flex item */
+}
+
+#main > nav,
+#main > aside {
+    flex: 0 0 20vw; /* Mengatur lebar sebesar 20% lebar parent*/
+}
+
+#main > nav {
+    background: #03DAC5;
+    order: 3; /* Mengatur urutan flex item */
+}
+
+#main > aside {
+    background: pink;
+    order: 2; /* Mengatur urutan flex item */
+}
+
+header, footer {
+    background: khaki;
+    height: 20vh;
+}
+
+header, footer, article, nav, aside {
+    padding: 1em;
+}

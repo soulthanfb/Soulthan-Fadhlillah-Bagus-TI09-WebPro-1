@@ -1,0 +1,20 @@
+/*design table*/
+.table {
+    font-family: sans-serif;
+    color: #232323;
+    border-collapse: collapse;
+}
+ 
+.table, th, td {
+    border: 1px solid blue;
+    padding: 8px 20px;
+}
+
+.th1 {
+    color: white;
+    background-color: #2196f3;
+}
+
+.td1 {
+    background-color: #e3f2fd;
+}

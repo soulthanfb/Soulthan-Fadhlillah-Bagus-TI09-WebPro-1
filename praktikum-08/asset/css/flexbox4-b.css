@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    background-color: royalblue;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    margin: 0;
+    color: white;
+    padding: 4px;
+}
+
+.container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+}
+
+article,
+aside {
+    min-width: 20vw;
+}
+
+footer,
+header {
+    min-height: 10vh;
+}
+
+nav {
+    background-color: maroon;
+    min-width: 20vw;
+}
+
+header {
+    background-color: aqua;
+    color: black;
+}
+
+article {
+    background-color: gold;
+    flex-grow: 1;
+    color: black;
+}
+
+aside {
+    background-color: blanchedalmond;
+    color: black;
+}
+
+footer {
+    background-color: greenyellow;
+    color: black;
+}
+
+nav,
+header,
+article,
+aside,
+footer {
+    margin: 8px;
+    padding: 10px;
+}
+
+

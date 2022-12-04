@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Flexbox</title>
+    <style>
+        .kotak {
+            text-align: center;
+            width: 74px;
+            background-color: brown;
+            padding: 50px;
+            border: 1px solid black;
+        }
+
+        .container-1{
+            width: 600px;
+            background-color: antiquewhite;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .container-2{
+            width: 600px;
+            background-color: antiquewhite;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        .container-3{
+            width: 600px;
+            border-color: antiquewhite;
+            display: flex;
+            flex-wrap: wrap-reverse;
+        }
+
+        .container-4{
+            width: 600px;
+            border-color: antiquewhite;
+            display: flex;
+            flex-wrap: row wrap-reverse;
+            
+        }
+</style>
+</head>
+<body>
+    <h3>Flex Wrap: Wrap</h3>
+    <div class="container-1">
+        <div class="kotak item-1">1</div>
+        <div class="kotak item-2">2</div>
+        <div class="kotak item-3">3</div>
+        <div class="kotak item-4">4</div>
+        <div class="kotak item-5">5</div>
+    </div>
+    <h3>Flex Wrap : No wrap</h3>
+    <div class="container-2">
+        <div class="kotak item-1">1</div>
+        <div class="kotak item-2">2</div>
+        <div class="kotak item-3">3</div>
+        <div class="kotak item-4">4</div>
+        <div class="kotak item-5">5</div>
+    </div>
+    <h3>Flex Wrap : Wrap Reverse</h3>
+    <div class="container-3">
+        <div class="kotak item-1">1</div>
+        <div class="kotak item-2">2</div>
+        <div class="kotak item-3">3</div>
+        <div class="kotak item-4">4</div>
+        <div class="kotak item-5">5</div>
+    </div>
+    <h3>Flex Wrap : Shorthand</h3>
+    <div class="container-4">
+        <div class="kotak item-1">1</div>
+        <div class="kotak item-2">2</div>
+        <div class="kotak item-3">3</div>
+        <div class="kotak item-4">4</div>
+        <div class="kotak item-5">5</div>
+    </div>
+</body>
+</html>
