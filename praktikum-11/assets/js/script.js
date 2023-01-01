@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // isi logic gamemu disini
 // menangkap elemernt a dengan menggunakan looping
 document.querySelectorAll('#option a').forEach((anchor)=> {
