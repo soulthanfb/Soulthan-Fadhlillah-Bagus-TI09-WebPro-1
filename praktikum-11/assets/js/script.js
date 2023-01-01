@@ -57,7 +57,7 @@ function computerChoice(element){
 
 
 
-=======
+
 // isi logic gamemu disini
 // menangkap elemernt a dengan menggunakan looping
 document.querySelectorAll('#option a').forEach((anchor)=> {
@@ -114,8 +114,3 @@ function computerChoice(element){
     if(pilihanUser == pilihanKomputer){
         hasil.innerHTML = ('You Draw');
     }
-
-
-
->>>>>>> aa4cf99c8623560f496d1f85c23b807c0f1e6740
-}
