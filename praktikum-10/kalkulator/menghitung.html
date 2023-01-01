@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator</title>
+</head>
+<body>
+  <h2>Kalkulator</h2>
+  <form>
+    Bilangan 1 : <input type="text" id="bil1">
+    <br>
+    Bilangan 2 : <input type="text" id="bil2">
+    <br>
+    <input type="button" value="Hitung" id="hitung">
+    <br>
+    Hasil Penjumlahan : <span id="hasilPenjumlahan"></span>
+  </form>
+
+  <script>
+    let buttonProses = document.getElementById("hitung");
+
+    buttonProses.onclick = function(){
+      let bil1 = document.getElementById("bil1").value;
+      let bil2 = document.getElementById("bil2").value;
+      let hasil = parseInt(bil1) + parseInt(bil2);
+      document.getElementById("hasilPenjumlahan").innerHTML = hasil;
+    }
+  </script>
+</body>
+</html>

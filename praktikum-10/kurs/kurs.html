@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs</title>
+</head>
+<body>
+    <Form style="background-color: rgb(217, 241, 255); width: 550px;">
+        <fieldset>
+            <legend>Kurs Rupiah - Mata Uang Asing</legend>
+            <table border="1">
+                <thead>
+                    <th>Masukan Nilai</th>
+                    <th>Valas</th>
+                    <th>Nilai Rupiah</th>
+                </thead>
+                <tbody>
+                    <td><input type="number" id="uang"></td>
+                        <td>
+                            <select name="" id="pilihan">
+                                <option>--Pilih--</option>
+                                <option value="usd">Dollar US</option>
+                                <option value="sd">Dollar Singapore</option>
+                                <option value="rm">Ringgit Malaysia</option>
+                                <option value="yen">Yen Jepang</option>
+                                <option value="eu">Euro</option>
+                                <option value="riyal">Riyal Saudi Arabia</option>
+                            </select>
+                        </td>
+                    <td><input type="text" id="konversi"></td>
+                </tbody>
+            </table>
+        </fieldset>
+    </Form>
+
+    <script>
+        let pilihan = document.getElementById('pilihan')
+
+        pilihan.onchange = function(){
+            let inputUang = document.getElementById('uang').value;
+
+            if (pilihan.value == 'usd'){
+                document.getElementById('konversi').value = 'Rp. ' + inputUang * 9915;
+                } else if (pilihan.value == 'sd') {
+                    document.getElementById('konversi').value = 'Rp. ' + inputUang * 13472;
+                } else if (pilihan.value == 'rm') {
+                    document.getElementById('konversi').value = 'Rp. ' + inputUang * 8472;
+                } else if (pilihan.value == 'yen') {
+                    document.getElementById('konversi').value = 'Rp. ' + inputUang * 1347;
+                } else if (pilihan.value == 'eu') {
+                    document.getElementById('konversi').value = 'Rp. ' + inputUang * 15888;
+                } else if (pilihan.value == 'riyal') {
+                    document.getElementById('konversi').value = 'Rp. ' + inputUang * 3592;
+                } else {
+                    document.getElementById('konversi').value = 'Anda Tidak Memilih';
+                }
+            }
+    </script>
+</body>
+</html>

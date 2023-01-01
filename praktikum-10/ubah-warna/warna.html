@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merubah Warna Background</title>
+</head>
+<body id="id1">
+  <form>
+    <input type="button" value="Ubah Warna" id="mengubah">
+  </form>
+
+  <script>
+    let buttonUbah = document.getElementById("mengubah");
+
+    buttonUbah.onclick = function(){
+      let acak = Math.round(Math.random() * 10);
+      // let warnas = "FFFFFF";
+
+      // if(acak == 1){
+      //   warnas = "FFCCCC";
+      // }else if(acak == 2){
+      //   warnas = "CCAFFF";
+      // }else if(acak == 3){
+      //   warnas = "A6BEFF";
+      // }else if(acak == 4){
+      //   warnas = "99FFFF";
+      // }else if(acak == 5){
+      //   warnas = "D5CCBB";
+      // }else if(acak == 6){
+      //   warnas = "99FF99";
+      // }else if(acak == 7){
+      //   warnas = "FFFF99";
+      // }else if(acak == 8){
+      //   warnas = "FFCC99";
+      // }else if(acak == 9){
+      //   warnas = "CCCCCC";
+      // }else if(acak == 10){
+      //   warnas = "MHJSHS";
+      // }
+
+      // console.log("Bilangan Acak : " + acak);
+      // console.log("Dapat Warna :" + warnas);
+
+      // document.getElementsByTagName("body")[0].style.backgroundColor = "#" + warnas;
+      warnas = ["626D71", "336B87", "46211A", "AEBD38", "07575B", "2E4600", "FB6542", "FFBB00", "F18D9E", "5BC8AC", "8D230F"];
+
+      console.log("bilangan acak " + acak);
+      console.log("Dapat warna " + "#" + warnas[acak]);
+
+      document.getElementById("id1").style.backgroundColor = "#" + warnas[acak];
+    }
+  </script>
+</form>
+</html>

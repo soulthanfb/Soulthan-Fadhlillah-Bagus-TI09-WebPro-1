@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gambar Hewan</title>
+  <style>
+    #daftar{
+      width: 20%;
+    }
+    #img{
+      width: 50%;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <select id="daftar">
+    <option>Pilihan Hewan</option>
+    <option value="singa">Singa</option>
+    <option value="elang">Elang</option>
+    <option value="gorila">Gorila</option>
+  </select>
+  <br> <br> <br>
+  <img id ="img">
+
+  <script>
+    let daftar = document.getElementById("daftar");
+    daftar.onchange = function(){
+      
+      if(daftar.value == "singa"){
+        document.getElementById("img").src = "images/singa.jpg";
+      }else if(daftar.value == "elang"){
+        document.getElementById("img").src = "images/elang.jpg";
+      }else if(daftar.value == "gorila"){
+        document.getElementById("img").src = "images/gorila.jpg";
+      }
+    }
+  </script>
+</body>
+</html>

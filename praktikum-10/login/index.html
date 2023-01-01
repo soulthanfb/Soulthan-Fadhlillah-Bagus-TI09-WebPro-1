@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form id="form">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username">
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        <br>
+        <button type="submit" id="login">Login</button>
+    </form>
+
+    <script>
+        let buttonLogin = document.getElementById("login");
+
+        buttonLogin.onclick = function(){
+            let inputNama = document.getElementById('username').value;
+            let inputPassword = document.getElementById('password').value;
+            let form = document.getElementById('form');
+
+            if(inputNama == 'user' && inputPassword == 'user' ){
+                alert('Login Berhasil');
+                form.setAttribute('action', 'dashboard.html')
+            } else {
+                alert('username atau password salah');
+            }
+        }
+    </script>
+</body>
+</html>
